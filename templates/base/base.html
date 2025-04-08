@@ -1,0 +1,451 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMCH Hospital Purnea</title>
+    <link rel="stylesheet" href="https://img.houseui.com/static/css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css"/>
+    {% include "base/temp.html" %}
+    {% comment %} <link rel="stylesheet" href="{% static "css/base.css" %}"/> {% endcomment %}
+</head>
+<body>
+    <header>
+        <div class="header-top py-2">
+            <div class="container">
+                <div class="d-flex ">
+                    <div class="h-items">
+                        <a href="tel:+916254248787" class="pe-3"> 
+                            <i class="ri-phone-line"></i> emergency: +91-6254 248-787 
+                        </a>
+                    </div>
+                    <div>
+                        <a href="tel:+916254248787" class="px-3"> 
+                            <i class="ri-truck-line"></i> ambulance: +91-6254 248-787 
+                        </a>
+                    </div>
+
+                    <div class="ms-auto">
+                        <a href="tel:+916254248787" class="px-3"> 
+                            <i class="ri-map-pin-add-line"></i> Line Bazar, Purnea, Bihar 854301
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-mid">
+            <div class="container d-flex justify-content-between align-items-center">
+                <div class="h-logo">
+                    <a href="/">
+                        <img src="https://gmchpurnea.com/static/img/logo-main.png" class="logo  mx-auto">
+                    </a>
+                </div>
+                <div class="h-name text-center">
+                    <h1 class="">GOVT. MEDICAL COLLAGE & HOSPITAL, PURNEA (BIHAR)</h1>
+                    <h2 class="">राजकीय चिकित्सा महाविद्यालय एवं अस्पताल, पूर्णियाँ (बिहार)</h2>
+                </div>
+                <div class="bs-logo">
+                    <a href="">
+                        <img src="https://gmchpurnea.com/static/img/bihar-sarka.png" class="logo  mx-auto">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <div class="container">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/">Department</a>
+                <a class="nav-link" href="/">About Hospital</a>
+                <a class="nav-link" href="/">OPD Schedule</a>
+                <a class="nav-link" href="/">Gallery</a>
+                <a class="nav-link" href="/">Tender</a>
+                <a class="nav-link" href="/">Notice</a>
+                <a class="nav-link" href="/">Event & News</a>
+            </div>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <div id="carousel-indicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="0" class="active" aria-current="true"></button>
+              <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="1"></button>
+              <button type="button" data-bs-target="#carousel-indicators" data-bs-slide-to="2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="{% static "temp/DSC_0047.JPG" %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="{% static "temp/DSC_0050.JPG" %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static "temp/DSC_0028.JPG" %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-indicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-indicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <section class="tender-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title"><i class="ri-calendar-event-line"></i> Latest News & Event</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                    
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._673_Date_24.09.2024.pdf" class="list-group-item list-hover" target="_blank" title="TECHNICAL BID MEETING DATE:-27/09/2024">
+                                    <i class="ri-calendar-2-line"></i> 25-09-24 - TECHNICAL BID MEETING
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._665_Date_17.09.2024.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="TECHNICAL BID MEETING DATE:-20/09/2024">
+                                    <i class="ri-calendar-2-line"></i> 17-09-24 - TECHNICAL BID MEETING
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/letter_no._652.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Technical Bid Meeting Cancel  dated:-12.09.2024">
+                                    <i class="ri-calendar-2-line"></i> 12-09-24 - Technical Bid Meeting Cancel  dated:-12.09.2024 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._610_Date_30.08.2024.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Regarding Bus/Innova/Scorpio(12.09.2024 Time Till 5:00pm) Technical Biding Open Date- 13.09.2024">
+                                    <i class="ri-calendar-2-line"></i> 30-08-24 - Tender Regarding Bus/Innova/Scorpio(12.09.2024 Time Till 5:00pm) Technical Bidi… 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2023/09/Letter_No._347.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Book">
+                                    <i class="ri-calendar-2-line"></i> 13-09-23 - Tender Book 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2023/09/Letter_No._343.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Book">
+                                    <i class="ri-calendar-2-line"></i> 05-09-23 - Tender Book 
+                                </a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title"><i class="ri-notification-2-line"></i> Important Notice</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                    
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._673_Date_24.09.2024.pdf" class="list-group-item list-hover" target="_blank" title="TECHNICAL BID MEETING DATE:-27/09/2024">
+                                    <i class="ri-calendar-2-line"></i> 25-09-24 - TECHNICAL BID MEETING
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._665_Date_17.09.2024.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="TECHNICAL BID MEETING DATE:-20/09/2024">
+                                    <i class="ri-calendar-2-line"></i> 17-09-24 - TECHNICAL BID MEETING
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/letter_no._652.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Technical Bid Meeting Cancel  dated:-12.09.2024">
+                                    <i class="ri-calendar-2-line"></i> 12-09-24 - Technical Bid Meeting Cancel  dated:-12.09.2024 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._610_Date_30.08.2024.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Regarding Bus/Innova/Scorpio(12.09.2024 Time Till 5:00pm) Technical Biding Open Date- 13.09.2024">
+                                    <i class="ri-calendar-2-line"></i> 30-08-24 - Tender Regarding Bus/Innova/Scorpio(12.09.2024 Time Till 5:00pm) Technical Bidi… 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2023/09/Letter_No._347.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Book">
+                                    <i class="ri-calendar-2-line"></i> 13-09-23 - Tender Book 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2023/09/Letter_No._343.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Book">
+                                    <i class="ri-calendar-2-line"></i> 05-09-23 - Tender Book 
+                                </a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-header">
+                            <h2 class="card-title"><i class="ri-hospital-line"></i> Tender Notice</h2>
+                        </div>
+                        <div class="card-body">
+                            <div class="list-group list-group-flush">
+                                    
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._673_Date_24.09.2024.pdf" class="list-group-item list-hover" target="_blank" title="TECHNICAL BID MEETING DATE:-27/09/2024">
+                                    <i class="ri-calendar-2-line"></i> 25-09-24 - TECHNICAL BID MEETING
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._665_Date_17.09.2024.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="TECHNICAL BID MEETING DATE:-20/09/2024">
+                                    <i class="ri-calendar-2-line"></i> 17-09-24 - TECHNICAL BID MEETING
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/letter_no._652.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Technical Bid Meeting Cancel  dated:-12.09.2024">
+                                    <i class="ri-calendar-2-line"></i> 12-09-24 - Technical Bid Meeting Cancel  dated:-12.09.2024 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2024/09/Letter_No._610_Date_30.08.2024.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Regarding Bus/Innova/Scorpio(12.09.2024 Time Till 5:00pm) Technical Biding Open Date- 13.09.2024">
+                                    <i class="ri-calendar-2-line"></i> 30-08-24 - Tender Regarding Bus/Innova/Scorpio(12.09.2024 Time Till 5:00pm) Technical Bidi… 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2023/09/Letter_No._347.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Book">
+                                    <i class="ri-calendar-2-line"></i> 13-09-23 - Tender Book 
+                                </a>
+                            
+                                <a href="https://gmchpurnea.com/media/documents/tenders/2023/09/Letter_No._343.pdf" class="list-group-item list-hover list-group-item-action text-uppercase" target="_blank" title="Tender Book">
+                                    <i class="ri-calendar-2-line"></i> 05-09-23 - Tender Book 
+                                </a>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mentors-section py-5">
+        <div class="container">
+           
+            <div class="row align-items-center">
+                <div class="col-md-4 text-center">
+                    <img src="https://gmchpurnea.com/static/img/supretendent-4.JPG" alt=""  class="img-fluid superintendent-img">
+                    <h3 class="mentor-text-sm">- Dr. Sanjay Kumar, Superintendent, GMCH Purnea</h3>
+                </div>
+                <div class="col-md-8">
+                    <h2 class="section-title">
+                       Message from Superintendent 
+                    </h2>
+                    <p class="mentor-text">
+
+                        It is a great honour for me to be the Superintendent at GMCH, Purnea. We have made it our continual goal to train competent, compassionate, and caring physicians via excellence in education, patient care, and medical research, in keeping with our objective. It gives me great honour to welcome you to the GMHC, Purnea. From here, you will begin your journey toward your sole most essential goal of becoming excellent doctors and professionals who will serve humanity.
+                    </p>
+                    <h3 class="mentor-name">Dr. Sanjay Kumar</h3>
+                    <h3 class="mentor-name">Thank You!!</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="service-section py-5 my-4">
+        <div class="container">
+            <h2 class="section-title">Service Offers by Hospital</h2>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/opd.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">OPD</h3>
+                                <p class="service-text mb-0">OPD: Offers routine medical check-ups, consultations, and basic treatments for patients who do not require hospitalization.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/ipd.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">IPD</h3>
+                                <p class="service-text mb-0">
+                                    IPD: Provides comprehensive medical care, treatment, and accommodation for patients requiring hospital admission for more than 24 hours.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/icu.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">ICU</h3>
+                                <p class="service-text mb-0">
+                                    ICU: Delivers critical medical care, continuous vital sign monitoring, and essential life support for patients with severe, life-threatening conditions.
+                                    </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/ambulance.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">Emergency</h3>
+                                <p class="service-text mb-0">
+                                    Emergency: Offers 24/7 immediate medical attention, first aid, and urgent treatment for accidents, injuries, and sudden, serious illnesses.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/blood-bag.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">Blood Bank</h3>
+                                <p class="service-text mb-0">Blood Bank: Ensures the constant availability of safe and screened blood and various blood products for necessary transfusions during medical procedures.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/pharmacy.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">Pharmacy</h3>
+                                <p class="service-text mb-0">Pharmacy: Dispenses prescribed medications to patients, providing crucial guidance on proper dosage, usage, and potential drug interactions.
+
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/microscope.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">Laboratories</h3>
+                                <p class="service-text mb-0">Laboratories: Conducts a wide range of essential diagnostic tests on patient samples like blood and urine to aid in accurate disease diagnosis and treatment monitoring.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card service-card">
+                        <div class="d-flex">
+                            <div class="service-icon"><img src="{% static "temp/ayushman-bh.png" %}" alt="" ></div>
+                            <div class="ms-3">
+                                <h3 class="service-title mb-1">Ayushman Bharat</h3>
+                                <p class="service-text mb-0">Ayushman Bharat
+                                    It provides cashless access to health insurance services for the beneficiary at the point of service, that is, the hospital.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="gallery-section py-5 mt-4 mb-3">
+        <div class="container pb-4">
+            <div class="d-flex">
+                <h2 class="section-title">Hospital Gallery</h2>
+                <div class="ms-auto"> <a href="/" class="btn gallery-btn">View All <i class="ri-arrow-right-line"></i></a></div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="card text-center">
+                        <img src="{% static "temp/DSC_0023.JPG" %}" alt="" class="gllery-img ">
+                        <h3 class="gallery-title">
+                            Our Doctors
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card text-center">
+                        <img src="{% static "temp/DSC_0050.JPG" %}" alt="" class="gllery-img ">
+                        <h3 class="gallery-title">
+                            Our Hospital
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card text-center">
+                        <img src="{% static "temp/DSC_0031.JPG" %}" alt="" class="gllery-img ">
+                        <h3 class="gallery-title">
+                            Hospital Labs
+                        </h3>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card text-center">
+                        <img src="{% static "temp/DSC_0077.JPG" %}" alt="" class="gllery-img ">
+                        <h3 class="gallery-title">
+                            Hospital Building
+                        </h3>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="text-center mt-4">
+               
+            </div>
+        </div>
+    </div>
+
+    {% comment %} <div class="about-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="" alt="" class="about-img">
+                </div>
+            </div>
+        </div>
+    </div> {% endcomment %}
+
+    <footer class="footer">
+       <div class="container">
+           <div class="row py-4">
+               <div class="col-12 col-lg-6">
+                   <h4 class="mb-4 footer-title">Govt. Medical College & Hospital, Purnea</h4>
+                   <div class="college-map d-flex">
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14371.610554993362!2d87.47417599798128!3d25.773779226197558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eff9754574a81b%3A0xe27c3ddfab850573!2sGovernment%20Medical%20College%20And%20Hospital%20Purnea!5e0!3m2!1sen!2sin!4v1635270825885!5m2!1sen!2sin" style="border:0; width: 100%; height:300px" allowfullscreen="" loading="lazy"></iframe>
+                   </div>
+               </div>
+   
+               <div class="col-lg-1"></div>
+       
+               <div class="col-6 col-lg-2 ">
+                   <h4 class="mb-4 footer-title">Quick Links</h4>
+                   <ul class="list-unstyled">
+                       <li><a class="footer-link" href="/"><i class="ri-arrow-right-line"></i> Home</a></li>
+                       <li><a class="footer-link" href="/gallery/" ><i class="ri-arrow-right-line"></i> Gallery</a></li>
+                       <li><a class="footer-link" href="/about/" ><i class="ri-arrow-right-line"></i> About us</a></li>
+                       <li><a class="footer-link" href="/department/"><i class="ri-arrow-right-line"></i> Departments</a></li>
+                       <li><a class="footer-link" href="/notification/tenders/"><i class="ri-arrow-right-line"></i> Tender Notice</a></li>
+                       <li><a class="footer-link" href="/"><i class="ri-arrow-right-line"></i> Important Notice</a></li>
+                       <li><a class="footer-link" href="/"><i class="ri-arrow-right-line"></i> News & Events</a></li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+        
+        <div class=" py-2 footer-end">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="col-6">
+                        © 2025 gmchpurnea.org All rights reserved 
+                    </div>
+                    <div class="ms-auto last-item">
+                        <div class="d-flex ms-auto">
+                            <div class="h-items">
+                                <a href="tel:+916254248787" class="pe-3"> 
+                                    <i class="ri-phone-line"></i> emergency: +91-6254 248-787 
+                                </a>
+                            </div>
+                            <div class="">
+                                <a href="tel:+916254248787" class="ps-3"> 
+                                    <i class="ri-map-pin-add-line"></i> Line Bazar, Purnea, Bihar 854301
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

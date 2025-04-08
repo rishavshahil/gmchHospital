@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Aleo", serif;
+    letter-spacing: .75px;
+}
+
+.fw-500{
+    font-weight: 500;
+}
+
+header .header-top{
+    background-color: #00B6BD;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+
+.navbar .h-name h1{
+    font-size: 34px;
+    font-weight: 700;
+}
+
+.navbar .h-name h1{
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.navbar .h-logo img{
+    width: 100px;
+}
+
+.navbar .bs-logo img{
+    width: 100px;
+}
+

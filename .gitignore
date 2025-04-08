@@ -1,0 +1,17 @@
+GMHospital/settings.py
+db.sqlite3
+media/*
+templates/base/not_include/*
+env
+__pycache__/
+*.pyc
+*.json
+static/admin/
+static/jazzmin/
+static/vendor/
+static/django_tinymce/
+static/tinymce/
+.DS_Store
+templates/base/not_include/
+backup/*
+z_tailwind_config/*
