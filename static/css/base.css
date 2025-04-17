@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 
 *{
-    font-family: "Aleo", serif;
-    letter-spacing: .75px;
+    font-family: "Rajdhani", sans-serif;
 }
 
 .fw-500{
@@ -10,27 +9,130 @@
 }
 
 header .header-top{
-    background-color: #00B6BD;
+    background-color: #346493;
     text-transform: uppercase;
     font-weight: 600;
     color: white;
 }
 
-.navbar .h-name h1{
-    font-size: 34px;
+header .header-top a{
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    font-size: 15px;
+}
+
+header .header-top i{
+    font-weight: 500;
+}
+
+
+header .header-top .h-items a{
+    border-right: 1.5px solid white;
+}
+
+.header-mid{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.header-mid .h-name h1{
+    font-size: 32px;
     font-weight: 700;
+    margin-bottom: 5px;
 }
 
-.navbar .h-name h1{
-    font-size: 34px;
-    font-weight: 800;
+.header-mid .h-name h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
-.navbar .h-logo img{
-    width: 100px;
+.header-mid .h-logo img{
+    width: 85px;
 }
 
-.navbar .bs-logo img{
-    width: 100px;
+.header-mid .bs-logo img{
+    width: 85px;
 }
+
+.navbar{
+    border-top: 1px solid #c6d9eb;
+    border-bottom: 1px solid #c6d9eb;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+.navbar .nav-link{
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1b334b;
+    font-size: 17px;
+}
+
+
+.footer{
+    border-top: 1px solid #b2cfed;
+}
+
+
+.footer .footer-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer .list-unstyled li{
+    margin-bottom: 10px;
+}
+.footer .footer-link{
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.footer-end{
+    background-color: #2e5984;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.footer-end a{
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.footer-end .h-items{
+    border-right: 1.5px solid white;
+}
+
+
+@media (max-width: 500px){
+    .header-mid .h-logo img{
+    width: 60px;
+    }
+    .header-mid .h-name h1{
+        font-size: 18px;
+    }
+
+    .header-mid .h-name h2{
+        font-size: 16px;
+    }
+
+    .hero-section .carousel img{
+        height: 250px;
+    }
+}
+
+
 

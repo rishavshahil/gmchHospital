@@ -1,253 +1,7 @@
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
-
-*{
-    font-family: "Rajdhani", sans-serif;
+.gallery-section {
+    min-height: 80vh;
 }
-
-.fw-500{
-    font-weight: 500;
-}
-
-header .header-top{
-    background-color: #346493;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: white;
-}
-
-header .header-top a{
-    text-decoration: none;
-    font-weight: 600;
-    color: white;
-    font-size: 15px;
-}
-
-header .header-top i{
-    font-weight: 500;
-}
-
-
-header .header-top .h-items a{
-    border-right: 1.5px solid white;
-}
-
-.header-mid{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    position: relative;
-    flex-wrap: wrap;
-}
-
-.header-mid .h-name h1{
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 5px;
-}
-
-.header-mid .h-name h2{
-    font-size: 30px;
-    font-weight: 600;
-    margin-bottom: 0;
-}
-
-.header-mid .h-logo img{
-    width: 85px;
-}
-
-.header-mid .bs-logo img{
-    width: 85px;
-}
-
-.navbar{
-    border-top: 1px solid #c6d9eb;
-    border-bottom: 1px solid #c6d9eb;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    flex-wrap: nowrap;
-    overflow-x: scroll;
-}
-
-.navbar .nav-link{
-    white-space: nowrap;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #1b334b;
-    font-size: 17px;
-}
-
-
-
-.hero-section .carousel img{
-    height: 500px;
-    object-fit: cover;
-    object-position: top 50px;
-}
-.tender-section .card {
-    border-radius: 16px;
-    overflow: hidden;
-    border: 1px solid #c6d9eb;
-}
-
-
-.tender-section .card .card-header{
-    padding: 10px 20px 10px 20px ;
-    background-color: #2e5984;
-}
-
-.tender-section .card .card-title{
-    position: relative;
-    font-size: 20px;
-    font-weight: 500;
-    color: white;
-    margin-bottom: 0;
-    text-transform: uppercase;
-}
-
-.tender-section .card .card-title::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    height: 2px;
-    width: 50px;
-    background-color: #fff;
-    transform: translateY(-50%);
-}
-
-.tender-section .card .card-body{
-    height: 350px;
-    overflow: scroll;
-    padding-top: 5px;
-}
-
-.tender-section .card .no-data-img{
-    height: 130px;
-    opacity: .75;
-}
-
-.tender-section .card .no-data-text{
-    text-transform: uppercase;
-    font-size: 22px;
-    font-weight: 600;
-    margin-top: 10px;
-}
-
-.tender-section .card .card-body .list-group a{
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: 500;
-    text-transform: uppercase;
-}
-
-.mentors-section{
-    background-color: #ecf2f8;
-}
-
-.mentors-section .section-title{
-    font-size: 26px;
-    font-weight: 700;
-    position: relative;
-    color: #1b334b;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.mentors-section .section-title::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -60px;
-    height: 3px;
-    width: 50px;
-    background-color: #1b334b;
-    transform: translateY(-50%);
-}
-
-
-.mentors-section .superintendent-img{
-    height: 280px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 18px;
-    object-position: top;
-}
-
-.mentors-section .mentor-name{
-    font-size: 22px;
-    font-weight: 700;
-    color: #1b334b;
-    text-transform: uppercase;
-    margin-bottom: 5px;
-
-}
-
-.mentors-section .mentor-text{
-font-size: 20px;
-font-weight: 500;
-}
-
-.mentors-section .mentor-text-sm{
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 5px;
-    margin-bottom: 0;
-}
-
-.service-section .section-title{
-    font-size: 36px;
-    font-weight: 700;
-    position: relative;
-    color: #1b334b;
-    margin-bottom: 35px;
-    text-transform: uppercase;
-    display: inline-block;
-}
-
-.service-section .section-title::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: -60px;
-    height: 3px;
-    width: 50px;
-    background-color: #1b334b;
-    transform: translateY(-50%);
-}
-
-.service-section .card{
-    border: 1px solid #a1bfde;
-    padding:20px;
-    border-radius: 20px;
-    margin-bottom: 20px;
-}
-
-.service-section .card .service-icon img{
-    width: 35px;
-    height: 35px; 
-}
-
-.service-section .card .service-title{
-    font-size: 28px;
-    font-weight: 600;
-}
-
-.service-section .card .service-text{
-    font-size: 15px;
-    font-weight: 500;
-    color: #1b334b;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.gallery-section{
-    background-color: #ecf2f8;
-}
-
 .gallery-section .section-title{
     font-size: 36px;
     font-weight: 700;
@@ -263,22 +17,35 @@ font-weight: 500;
     position: absolute;
     top: 50%;
     right: -60px;
-    height: 3px;
+    height: 4px;
     width: 50px;
-    background-color: #1b334b;
+    background-color: #346493;
     transform: translateY(-50%);
 }
 
 .gallery-section .card{
     padding: 15px;
+    box-shadow: 0 5px 10px -10.8px;
     border-radius: 18px;
+    border: 1px solid #8eb3d7;
 }
 
 .gallery-section .card img{
-    border-radius: 15px;
-    aspect-ratio: 1/1;
+    border-radius: 10px;
+    width: 100%;
+    height: 350px;
     object-fit: cover;
     object-position: center;
+    transition: .3s all ease-in-out;
+}
+
+.gallery-section .card .img-wrapper{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.gallery-section .card:hover img{
+    transform: scale(1.05);
 }
 
 .gallery-section .card .gallery-title{
@@ -299,93 +66,5 @@ font-weight: 500;
     border-radius: 25px;
     text-transform: uppercase;
 }
-
-.footer .footer-title{
-    font-size: 26px;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.footer .list-unstyled li{
-    margin-bottom: 10px;
-}
-.footer .footer-link{
-    font-size: 18px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #000;
-    text-transform: uppercase;
-}
-
-.footer-end{
-    background-color: #2e5984;
-    color: white;
-    font-weight: 500;
-    font-size: 16px;
-}
-
-.footer-end a{
-    font-size: 16px;
-    color: white;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.footer-end .h-items{
-    border-right: 1.5px solid white;
-}
-
-
-@media (max-width: 500px){
-    .header-mid .h-logo img{
-    width: 60px;
-    }
-    .header-mid .h-name h1{
-        font-size: 18px;
-    }
-
-    .header-mid .h-name h2{
-        font-size: 16px;
-    }
-
-    .hero-section .carousel img{
-        height: 250px;
-    }
-
-    .mentors-section .section-title{
-        font-size: 24px;
-    }
-
-    .mentors-section .section-title::after{
-        content: unset;
-    }
-
-    .mentors-section .mentor-text{
-        font-size: 16px;
-    }
-
-
-    .service-section .section-title{
-        font-size: 26px;
-    }
-
-    .service-section .section-title::after{
-        content: unset;
-    }
-
-    .gallery-section .section-title::after{
-        content: unset;
-    }
-    .gallery-section .section-title{
-        font-size: 24px;
-    }
-    
-    .gallery-section .gallery-btn{
-        font-size: 16px;
-        padding: 3px 6px 3px 12px;
-    }
-}
-
-
 
 </style>

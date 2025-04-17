@@ -1,0 +1,32 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block title %}Gallery - GMCH Hospital Purnea{% endblock title %}
+{% block header %}
+<meta name="description" content="GMCH Hospital Purnea, Bihar">
+<link rel="stylesheet" href="{% static "css/notice.css" %}"/>
+{% include "base/temp.html" %}
+{% endblock header %}
+{% block body %}
+<div class="gallery-section pt-4 pb-5">
+    <div class="container pb-4">
+        <h1 class="section-title">Hospital Gallery</h1>
+        <div class="row">
+            {% for gallery in galleries %}
+            <div class="col-md-6 col-lg-4">
+                <a href="{% url "gallery:gallery_img" gallery.slug %}" class="text-decoration-none">
+                    <div class="mb-5 card text-center">
+                        <div class="img-wrapper">
+                            <img src="{{gallery.thumbnail.url}}" alt="" class="gllery-img ">
+                        </div>
+                        <h3 class="gallery-title">
+                            {{gallery.title}}
+                        </h3>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock body %}

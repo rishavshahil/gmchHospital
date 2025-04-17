@@ -1,0 +1,66 @@
+
+.opd-section{
+    min-height: 80vh;
+}
+
+.opd-section .section-title{
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 38px;
+    color: #1b334b;
+    display: inline-block;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.opd-section .section-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right:  -60px;
+    height: 5px;
+    width: 50px;
+    background-color: #346493;
+    transform: translateY(-50%);
+}
+
+.opd-section .opd-table{
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: 1px solid #c6d9eb;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.opd-section .opd-table table{
+    width: 100%;
+}
+
+.opd-section .opd-table table thead{
+    border-bottom: 1px solid #c6d9eb;
+    background-color: #2e5984;
+    color: white;
+}
+
+
+.opd-section .opd-table table tr:not(:last-child){
+    padding: 15px 25px;
+    border-bottom: 1px solid #c6d9eb;
+}
+
+.opd-section .opd-table table tr td, .opd-section .opd-table table tr th{
+    padding: 15px 25px;
+}
+
+
+.opd-section .no-data-img{
+    height: 250px;
+}
+
+.opd-section .no-data-text{
+    font-size: 32px;
+    margin-top: 15px;
+    font-weight: 600;
+    margin-left: 20px;
+}

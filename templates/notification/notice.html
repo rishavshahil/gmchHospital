@@ -1,0 +1,40 @@
+{% extends "base/base.html" %}
+{% load static %}
+{% block title %}Notice - GMCH Hospital Purnea{% endblock title %}
+{% block header %}
+<meta name="description" content="GMCH Hospital Purnea, Bihar">
+<link rel="stylesheet" href="{% static "css/notice.css" %}"/>
+{% endblock header %}
+{% block body %}
+<div class="notice-section pt-4 pb-5">
+    <div class="container pb-4">
+        <h1 class="section-title">Hospital Notice</h1>
+        <div class="notice-table">
+            <table>
+                <thead>
+                    <th class="sno">SNo.</th>
+                    <th class="category-col">Notice Category</th>
+                    <th>Notice Title</th>
+                    <th>Publishing Date</th>
+                </thead>
+                {% for notice in notices %}
+                <tr>
+                    <td class="sno">{{forloop.counter|stringformat:"02d"}}</td>
+                    <td class="category-col">{{notice.category}}</td>
+                    <td><a href="{{notice.document.url}}" target="_blank">{{notice.title}}</a></td>
+                    <td>{{notice.notice_date}}</td>
+                </tr>
+                {% endfor %}
+                
+            </table>
+            {% if not notices  %}
+            <div class="text-center my-5">
+                <img src="{% static "temp/no-data.svg" %}" alt="" class="no-data-img">
+                <p class="no-data-text">No Notice Available</p>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
