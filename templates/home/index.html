@@ -64,11 +64,13 @@
                         <h2 class="card-title"><i class="ri-notification-2-line"></i> Important Notice</h2>
                     </div>
                     <div class="card-body">
+                        {% for notice in notices %}
                         <div class="list-group list-group-flush">
-                            <a href="https://watchdroid.blr1.cdn.digitaloceanspaces.com/gmch/notice.pdf" class="list-group-item list-hover" target="_blank" title="General Information">
-                                <i class="ri-calendar-2-line"></i> 08 April, 24 - General Information
+                            <a href="{{notice.document.url}}" class="list-group-item list-hover" target="_blank" title="{{notice.title}}">
+                                <i class="ri-calendar-2-line"></i> {{notice.notice_date}} - {{notice.title}}
                             </a>
                         </div>
+                        {% endfor %}
                         {% comment %} <div class="text-center my-5">
                         
                             <img src="{% static "temp/no-data.svg" %}" alt="" class="no-data-img">

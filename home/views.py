@@ -1,13 +1,14 @@
 from django.shortcuts import render
 from django.views import View
 from department.models import OPD_Schedule
-
+from notification.models import HospitalNotice
 
 class HomeView(View):
     template_name = 'home/index.html'
 
     def get(self, request, *args, **kwargs):
-        return render(request, self.template_name)
+        notices = HospitalNotice.objects.all().order_by("-notice_date")
+        return render(request, self.template_name, {"notices": notices})
     
 
 class AboutView(View):
